@@ -14,6 +14,12 @@
 
 public class Main {
     public static void main(String[] args) {
+        Account acc1 = new Account();
+        Account acc2 = new Account();
+        acc1.putCoins(1000);
+        acc2.putCoins(1000);
+        Transaction transaction = new Transaction();
+        transaction.proceed(acc1, acc2, 1500);
 
     }
 }
